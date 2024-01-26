@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane prefHeight="101.0" prefWidth="1098.0" style="-fx-background-color: #5C368D;">
+         <children>
+            <Button layoutX="772.0" layoutY="33.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Log out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="36.0" text="Cyberjaya Online Rental Management System" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="520.0" layoutY="36.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Register" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="22.0" layoutY="29.0">
+               <image>
+                  <Image url="@../Icon/property.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <TabPane layoutX="-2.0" layoutY="96.0" prefHeight="586.0" prefWidth="1097.0" tabClosingPolicy="UNAVAILABLE" tabMaxHeight="210.0" tabMaxWidth="210.0" tabMinHeight="35.0" tabMinWidth="180.0">
+        <tabs>
+          <Tab fx:id="propertyTab" text=" Home">
+            <content>
+              <AnchorPane fx:id="propertyPane" minHeight="0.0" minWidth="0.0" prefHeight="556.0" prefWidth="928.0" style="-fx-background-color: white;" />
+            </content>
+          </Tab>
+          <Tab fx:id="requestTab" text="Registration Request">
+            <content>
+              <AnchorPane fx:id="requestPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;" />
+            </content>
+          </Tab>
+            <Tab fx:id="accountTab" text="List of Accounts">
+              <content>
+                <AnchorPane fx:id="accountPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;" />
+              </content>
+            </Tab>
+            <Tab fx:id="createAdminTab" text="Create Admin Account">
+              <content>
+                <AnchorPane fx:id="createAdminPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: white;" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

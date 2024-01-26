@@ -1,0 +1,24 @@
+#BlueJ class context
+comment0.target=OwnerAgentRootController
+comment0.text=\r\n\ \ \ \ This\ s\ a\ controller\ class\ used\ by\ property\ owner\ and\ agent.\ It\ is\ a\ tabpane\ that\ contains\ multiple\ FXML\r\n\ \ \ \ which\ is\ to\ perform\ different\ tasks.\r\n
+comment1.params=primaryStage
+comment1.target=void\ setStage(javafx.stage.Stage)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Set\ stage\ that\ is\ passed\ from\ previous\ scene.\r\n
+comment2.params=username\ accType
+comment2.target=void\ initData(java.lang.String,\ java.lang.String)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Set\ username\ and\ account\ type\ that\ is\ obtained\ from\ login.\r\n
+comment3.params=url\ resources
+comment3.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment3.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ A\ method\ to\ initialize\ tabpane.\ First\ tab,\ which\ is\ property.fxml\ is\ loaded\ and\ home\ icon\ is\ set.\r\n\ \ \ \ For\ each\ tab,\ event\ handler\ is\ set\ so\ that\ whenever\ user\ change\ tab,\ the\ targeted\ FXML\ file\ is\ loaded.\r\n\ \ \ \ Tabs\ for\ owner\ and\ agent\ include\:\ property\ homepage,\ owned\ properties\ page,\ rental\ request\ page\ and\r\n\ \ \ \ manage\ rental\ page.\ \r\n
+comment4.params=t
+comment4.target=void\ handle(javafx.event.Event)
+comment5.params=t
+comment5.target=void\ handle(javafx.event.Event)
+comment6.params=t
+comment6.target=void\ handle(javafx.event.Event)
+comment7.params=t
+comment7.target=void\ handle(javafx.event.Event)
+comment8.params=event
+comment8.target=void\ logoutClicked(javafx.event.ActionEvent)
+comment8.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ When\ logout\ button\ is\ clicked,\ back\ to\ menu\ page.\r\n
+numComments=9

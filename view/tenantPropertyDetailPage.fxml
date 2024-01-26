@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1090.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TenantController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="101.0" prefWidth="1097.0" style="-fx-background-color: #5C368D;">
+         <children>
+            <Button layoutX="732.0" layoutY="37.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Log out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="36.0" text="Cyberjaya Online Rental Management System" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="520.0" layoutY="36.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Register" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="22.0" layoutY="29.0">
+               <image>
+                  <Image url="@../Icon/property.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="profileBtn" layoutX="948.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleProfileBtn" prefHeight="88.0" prefWidth="77.0" style="-fx-background-color: transparent;" />
+            <ImageView fx:id="profilePic" fitHeight="67.0" fitWidth="70.0" layoutX="963.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="-4.0" layoutY="102.0" prefHeight="77.0" prefWidth="1090.0" style="-fx-background-color: white;">
+         <children>
+            <MenuButton fx:id="notification" layoutX="835.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#handleIsViewed" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="notificationIcon" fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="functions" layoutX="733.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewRented" text="View Rented Property" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewBookmark" text="View Bookmark" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewHistories" text="View Histories" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <Button fx:id="profileBtn" layoutX="932.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleProfileBtn" prefHeight="67.0" prefWidth="77.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="profilePic" fitHeight="57.0" fitWidth="66.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="homeBtn" layoutX="125.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <BorderPane layoutX="1.0" layoutY="179.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="503.0" prefWidth="1090.0">
+         <center>
+            <ScrollPane prefHeight="844.0" prefWidth="1090.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+               <content>
+                  <AnchorPane prefHeight="887.0" prefWidth="1077.0" style="-fx-background-color: #E6F2F3;">
+                     <children>
+                        <ScrollPane layoutX="118.0" layoutY="20.0" prefHeight="220.0" prefWidth="699.0" vbarPolicy="NEVER">
+                           <content>
+                              <VBox fx:id="imageVBox" prefHeight="224.0" prefWidth="702.0" />
+                           </content>
+                        </ScrollPane>
+                        <Pane fx:id="leaveCommentBtn" layoutX="22.0" layoutY="257.0" prefHeight="279.0" prefWidth="675.0" style="-fx-background-color: white;">
+                           <children>
+                              <Label layoutX="28.0" layoutY="65.0" text="Project:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="propertyNameLabel" layoutX="28.0" layoutY="21.0">
+                                 <font>
+                                    <Font name="System Bold" size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="projectLabel" layoutX="88.0" layoutY="65.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="110.0" layoutY="135.0">
+                                 <image>
+                                    <Image url="@../icon/bathroomIcon.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fitHeight="35.0" fitWidth="24.0" layoutX="45.0" layoutY="128.0">
+                                 <image>
+                                    <Image url="@../icon/roomIcon.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Label fx:id="rentPrice" layoutX="404.0" layoutY="27.0" prefHeight="30.0" prefWidth="134.0">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="170.0" layoutY="137.0" text="Size:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="rentRate" layoutX="296.0" layoutY="137.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="27.0" layoutY="97.0" text="Type:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="30.0" layoutY="223.0" text="Contact info:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="31.0" layoutY="182.0" text="Address:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="sizeLabel" layoutX="206.0" layoutY="137.0" prefHeight="20.0" prefWidth="67.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="propertyTypeLabel" layoutX="75.0" layoutY="98.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="roomNum" layoutX="22.0" layoutY="137.0" prefHeight="20.0" prefWidth="22.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="bathNum" layoutX="88.0" layoutY="137.0" prefHeight="20.0" prefWidth="22.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="addressLabel" layoutX="88.0" layoutY="182.0" prefHeight="20.0" prefWidth="585.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="phoneAndEmail" layoutX="116.0" layoutY="223.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="contactName" layoutX="116.0" layoutY="243.0">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Pane layoutX="714.0" layoutY="257.0" prefHeight="395.0" prefWidth="348.0" style="-fx-background-color: white;">
+                           <children>
+                              <GridPane layoutX="32.0" layoutY="41.0" prefHeight="336.0" prefWidth="344.0">
+                                 <columnConstraints>
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                 </columnConstraints>
+                                 <rowConstraints>
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                 </rowConstraints>
+                                 <children>
+                                    <Label />
+                                    <Label fx:id="faci3" GridPane.rowIndex="1" />
+                                    <Label fx:id="faci5" GridPane.rowIndex="2" />
+                                    <Label fx:id="faci7" GridPane.rowIndex="3" />
+                                    <Label fx:id="faci9" GridPane.rowIndex="4" />
+                                    <Label fx:id="faci11" GridPane.rowIndex="5" />
+                                    <Label fx:id="faci13" GridPane.rowIndex="6" />
+                                    <Label fx:id="faci2" GridPane.columnIndex="1" />
+                                    <Label fx:id="faci4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                    <Label fx:id="faci6" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                    <Label fx:id="faci1" />
+                                    <Label fx:id="faci8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                    <Label fx:id="faci10" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                    <Label fx:id="faci12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                    <Label fx:id="faci15" GridPane.rowIndex="7" />
+                                    <Label fx:id="faci17" GridPane.rowIndex="8" />
+                                    <Label fx:id="faci14" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                    <Label fx:id="faci16" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                    <Label fx:id="faci18" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                                 </children>
+                              </GridPane>
+                              <Label layoutX="150.0" layoutY="14.0" text="Facilities" underline="true">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                        <Label layoutX="30.0" layoutY="552.0" text="Comment">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                        <ScrollPane layoutX="22.0" layoutY="593.0" prefHeight="267.0" prefWidth="544.0">
+                           <content>
+                              <VBox fx:id="commentVBox" prefHeight="267.0" prefWidth="548.0" />
+                           </content>
+                        </ScrollPane>
+                        <Button fx:id="backBtn" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="66.0" prefWidth="76.0" style="-fx-background-color: white;" />
+                        <Button layoutX="845.0" layoutY="41.0" mnemonicParsing="false" onAction="#handleBookmarkBtn" style="-fx-background-color: transparent;" />
+                        <Button fx:id="rentRequestBtn" layoutX="845.0" layoutY="132.0" mnemonicParsing="false" onAction="#handleSendRentalRequestBtn" prefHeight="46.0" prefWidth="146.0" style="-fx-background-color: #5C368D;" text="Request To Rent" textFill="WHITE">
+                           <effect>
+                              <DropShadow height="13.0" radius="6.0" width="13.0" />
+                           </effect>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="845.0" layoutY="67.0" mnemonicParsing="false" onAction="#handleBookmarkBtn" style="-fx-background-color: transparent;">
+                           <graphic>
+                              <ImageView fx:id="bookmarkIcon" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true" />
+                           </graphic>
+                        </Button>
+                        <Button fx:id="commentBtn" layoutX="588.0" layoutY="680.0" mnemonicParsing="false" onAction="#handleLeaveCommentBtn" prefHeight="46.0" prefWidth="142.0" style="-fx-background-color: #5C368D;" text="Leave Comment" textFill="WHITE">
+                           <effect>
+                              <DropShadow height="13.0" radius="6.0" width="13.0" />
+                           </effect>
+                           <font>
+                              <Font size="16.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

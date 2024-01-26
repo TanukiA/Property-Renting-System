@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=PersonFactory
+comment0.text=\r\n\ \ \ \ This\ is\ a\ part\ of\ Factory\ Design\ Pattern.\r\n\ \ \ \ This\ PersonFactory\ class\ is\ responsible\ for\ instantiating\ concrete\ class\ for\ Admin,\ Owner,\ Agent\ and\ Tenant.\r\n\ \ \ \ It\ will\ decide\ what\ type\ of\ object\ to\ create\ during\ creation\ of\ registration\ request\ and\ the\ user\ accounts.\r\n\ \ \ \ The\ abstract\ class\ used\ is\ Person,\ while\ the\ subclasses\ invloved\ are\ Admin,\ Owner,\ Agent\ and\ Tenant.\r\n\ \ \ \ The\ client\ is\ RegisterModel,\ which\ will\ use\ this\ PersonFactory\ to\ get\ appropriate\ object\ of\ concreate\ class\r\n\ \ \ \ and\ pass\ the\ account\ data.\ This\ Design\ Pattern\ makes\ object\ creation\ easy\ to\ handle\ and\ create\ object\ without\ \r\n\ \ \ \ exposing\ the\ creation\ logic\ to\ the\ client\ (RegisterModel)\ and\ refer\ to\ newly\ created\ object\ using\ a\ \r\n\ \ \ \ common\ interface\ (Person).\r\n
+comment1.params=username\ name\ pwd\ email\ phoneNumber\ accType\ owner
+comment1.target=Person\ createAccount(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ A\ method\ that\ return\ new\ object\ according\ to\ account\ type\ during\ the\ creation\ of\ user\ account.\r\n\ \ \ \ Object\ of\ Person\ type\ is\ returned.\r\n
+comment2.params=username\ name\ pwd\ email\ phoneNumber\ accType\ owner
+comment2.target=Person\ createRegisterRequest(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ A\ method\ that\ return\ new\ object\ according\ to\ account\ type\ during\ the\ creation\ of\ registration\ request.\r\n\ \ \ \ Object\ of\ Person\ type\ is\ returned.\r\n
+numComments=3

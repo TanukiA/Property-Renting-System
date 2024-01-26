@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=Main
+comment0.text=\r\n\ \ \ \ This\ is\ the\ Main\ class\ that\ initiates\ the\ JavaFX\ application.\r\n\ \ \ \ It\ loads\ the\ main\ menu,\ which\ contains\ Login,\ Register\ and\ Continue\ as\ Guest\ button.\r\n
+comment1.params=args
+comment1.target=void\ main(java.lang.String[])
+comment2.params=primaryStage
+comment2.target=void\ start(javafx.stage.Stage)
+comment2.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ This\ is\ the\ first\ method\ which\ uses\ primaryStage\ to\ set\ scene.\ FXML\ file\ will\ start\ loading\ from\ here.\ \r\n
+numComments=3

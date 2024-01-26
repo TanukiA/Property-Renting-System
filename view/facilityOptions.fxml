@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="430.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <GridPane alignment="CENTER" layoutX="32.0" layoutY="26.0" prefHeight="382.0" prefWidth="554.0">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="214.55244445726169" minWidth="10.0" prefWidth="183.65732241476715" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="189.0279463173342" minWidth="10.0" prefWidth="180.9720381142092" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="182.16780090257424" minWidth="10.0" prefWidth="182.16780090257424" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <CheckBox fx:id="jogTrack" mnemonicParsing="false" text="Jogging track" GridPane.rowIndex="1" />
+            <CheckBox fx:id="security" mnemonicParsing="false" text="24 hours security" GridPane.rowIndex="2" />
+            <CheckBox fx:id="gym" mnemonicParsing="false" text="Gymnasium room" GridPane.rowIndex="3" />
+            <CheckBox fx:id="surau" mnemonicParsing="false" text="Surau" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <CheckBox fx:id="basketballCourt" mnemonicParsing="false" text="Basketball court" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <CheckBox fx:id="sauna" mnemonicParsing="false" text="Sauna" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <CheckBox fx:id="multiHall" mnemonicParsing="false" text="Multi-purpose hall" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <CheckBox fx:id="playground" mnemonicParsing="false" text="Playground" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <CheckBox fx:id="fencing" mnemonicParsing="false" text="Perimeter fencing" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <CheckBox fx:id="barbeque" mnemonicParsing="false" text="Barbeque area" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <CheckBox fx:id="mainEntrance" mnemonicParsing="false" text="Main entrance" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <CheckBox fx:id="landscapeGarden" mnemonicParsing="false" text="Landscape garden" GridPane.rowIndex="5" />
+            <CheckBox fx:id="lounge" mnemonicParsing="false" text="Lounge" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <CheckBox fx:id="pool" mnemonicParsing="false" text="Swimming pool" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <CheckBox fx:id="cafe" mnemonicParsing="false" text="Cafe" GridPane.rowIndex="4" />
+            <Button mnemonicParsing="false" onAction="#buttonPressed" prefHeight="28.0" prefWidth="91.0" style="-fx-background-color: black;" text="OK" textFill="WHITE" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="6" />
+            <CheckBox fx:id="carPark" mnemonicParsing="false" text="Car park" />
+            <CheckBox fx:id="dropOffPoint" mnemonicParsing="false" text="Drop off point" GridPane.columnIndex="1" />
+            <CheckBox fx:id="jacuzzi" mnemonicParsing="false" text="Jacuzzi" GridPane.columnIndex="2" />
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

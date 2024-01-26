@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=ManageRentalRequestController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controller\ class\ that\ is\ used\ by\ Property\ Owner/Agent\ to\ manage\ rental\ requests\ sent\ by\ tenants\ \r\n\ \ \ \ (assign\ or\ decline\ tenant's\ rental\ request).\r\n\ \ \ \ Listview\ is\ used\ to\ display\ the\ rental\ requests\ and\ update\ the\ list\ if\ changed.\r\n
+comment1.params=url\ resources
+comment1.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment1.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Retrieve\ the\ rental\ requests\ that\ belong\ to\ owned\ properties\ of\ owner/agent.\ Retrieve\ that\ property\ \r\n\ and\ tenants'\ info\ and\ store\ into\ rentalRequests\ ArrayList.\r\n\ If\ there\ is\ existing\ rental\ request,\ make\ a\ custom\ list\ for\ the\ listview.\ \r\n
+comment2.params=username\ accType
+comment2.target=void\ initData(java.lang.String,\ java.lang.String)
+comment2.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Set\ the\ username\ and\ account\ type\ that\ are\ passed\ after\ login\r\n
+comment3.params=
+comment3.target=void\ makeCustomList()
+comment3.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ This\ is\ a\ method\ to\ set\ all\ data\ to\ the\ listview\ and\ set\ cell\ factory\ of\ the\ listview\ ,\ prepare\ to\r\n\ populate\ the\ rental\ requests\ info.\ It\ calls\ a\ private\ class\ named\ CustomListCell\ that\ manage\ the\ cells.\r\n
+comment4.params=requestListView
+comment4.target=javafx.scene.control.ListCell\ call(javafx.scene.control.ListView)
+numComments=5

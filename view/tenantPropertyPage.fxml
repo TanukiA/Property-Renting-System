@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="678.0" prefWidth="1090.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="TenantController">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="101.0" prefWidth="1097.0" style="-fx-background-color: #5C368D;">
+         <children>
+            <Button layoutX="732.0" layoutY="37.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Log out">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="36.0" text="Cyberjaya Online Rental Management System" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="520.0" layoutY="36.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Register" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="22.0" layoutY="29.0">
+               <image>
+                  <Image url="@../Icon/property.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="profileBtn" layoutX="948.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleProfileBtn" prefHeight="88.0" prefWidth="77.0" style="-fx-background-color: transparent;" />
+            <ImageView fx:id="profilePic" fitHeight="67.0" fitWidth="70.0" layoutX="963.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+         </children>
+      </Pane>
+      <Pane layoutX="-4.0" layoutY="102.0" prefHeight="77.0" prefWidth="1090.0" style="-fx-background-color: white;">
+         <children>
+            <Button fx:id="homeBtn" layoutX="143.0" layoutY="2.0" mnemonicParsing="false" onAction="#handleHomeBtn" prefHeight="67.0" prefWidth="70.0" style="-fx-background-color: transparent;" />
+            <MenuButton fx:id="notification" layoutX="835.0" layoutY="14.0" mnemonicParsing="false" onMouseClicked="#handleIsViewed" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="notificationIcon" fitHeight="34.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Notification.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <MenuButton fx:id="functions" layoutX="733.0" layoutY="13.0" mnemonicParsing="false" style="-fx-background-color: transparent;">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewRented" text="View Rented Property" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewBookmark" text="View Bookmark" />
+                  <MenuItem mnemonicParsing="false" onAction="#handleViewHistories" text="View Histories" />
+               </items>
+               <graphic>
+                  <ImageView fitHeight="37.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Menu.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </MenuButton>
+            <Button fx:id="profileBtn" layoutX="932.0" layoutY="6.0" mnemonicParsing="false" onAction="#handleProfileBtn" prefHeight="67.0" prefWidth="62.0" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fx:id="profilePic" fitHeight="58.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" />
+               </graphic></Button>
+            <Button fx:id="homeBtn" layoutX="125.0" layoutY="11.0" mnemonicParsing="false" onAction="#handleHomeBtn" style="-fx-background-color: transparent;">
+               <graphic>
+                  <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../icon/Home.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+         </children>
+      </Pane>
+      <ScrollPane layoutX="82.0" layoutY="221.0" prefHeight="459.0" prefWidth="928.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="propertyVBox" prefHeight="483.0" prefWidth="922.0" />
+         </content>
+      </ScrollPane>
+      <Label fx:id="titleLabel" layoutX="412.0" layoutY="159.0" prefHeight="40.0" prefWidth="258.0" text="Rented Properties" textAlignment="CENTER">
+         <font>
+            <Font name="Candara Light" size="33.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

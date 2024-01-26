@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=LoginController
+comment0.text=\r\n\ \ \ \ This\ is\ the\ controller\ class\ for\ Login\ which\ is\ used\ by\ all\ users\ (Admin,\ Tenant,\ Owner,\ Agent)\r\n\ \ \ \ It\ contains\ 2\ textfields\ to\ fill\ in\ username\ and\ password.\ Will\ switch\ to\ homepage\ according\ to\ \r\n\ \ \ \ account\ type,\ if\ input\ is\ valid.\r\n
+comment1.params=primaryStage
+comment1.target=void\ setStage(javafx.stage.Stage)
+comment2.params=event
+comment2.target=void\ loginButtonClicked(javafx.event.ActionEvent)
+comment2.text=\r\n\ Author\:\ Nurshara\ Batrisyia,\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ When\ login\ button\ is\ clicked,\ it\ will\ first\ check\ the\ empty\ textfield,\ set\ error\ text\ if\ empty.\r\n\ After\ that,\ check\ the\ existence\ of\ username\ and\ password\ pairs\ in\ the\ account\ files.\r\n\ If\ matched,\ user\ will\ enter\ homepage\ according\ to\ account\ type,\ else\ user\ cannot\ proceed.\r\n\ Before\ going\ to\ homepage,\ all\ database(csv\ files)\ to\ be\ used\ are\ read\ into\ static\ ArrayList.\r\n
+comment3.params=event
+comment3.target=void\ registerButtonClicked(javafx.event.ActionEvent)
+comment3.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ In\ case\ user\ wants\ to\ register\ new\ account\ instead\ of\ proceed\ with\ login,\r\n\ user\ can\ click\ to\ switch\ to\ registration\ page.\r\n
+numComments=4

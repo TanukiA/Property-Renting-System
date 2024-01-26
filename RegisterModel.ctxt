@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=RegisterModel
+comment0.text=\ \r\n\ \ \ \ This\ is\ a\ part\ of\ Factory\ Design\ Pattern.\r\n\ \ \ \ It\ is\ a\ model\ class\ for\ registration,\ used\ for\ all\ actors\ (Tenant,\ Owner,\ Agent,\ Admin).\r\n\ \ \ \ It\ asks\ the\ PersonFactory\ to\ create\ objects\ for\ registration\ request\ and\ account\ creation.\ \r\n\ \ \ \ Also\ provides\ static\ methods\ for\ input\ validation\ on\ the\ registration\ form.\r\n
+comment1.params=name\ username\ pwd\ email\ phoneNumber\ accType\ owner
+comment1.target=void\ addRegisterRequest(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\ \ \ \ \r\n\ \ \ \ A\ method\ that\ call\ PersonFactory,\ obtain\ different\ objects\ in\ Person\ (superclass)\ type.\r\n\ \ \ \ After\ that,\ it\ add\ registration\ request\ for\ all\ account\ types\ (Tenant,\ Owner,\ Agent)\r\n
+comment2.params=name\ username\ pwd\ email\ phoneNumber\ accType\ owner
+comment2.target=void\ addAccount(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ A\ method\ that\ call\ PersonFactory,\ obtain\ the\ objects\ in\ Person\ (superclass)\ type.\r\n\ \ \ \ The\ created\ object\ is\ used\ to\ add\ the\ particular\ account\ according\ to\ type.\r\n\ \ \ \ So,\ the\ Person\ object\ is\ downcasted\ to\ add\ the\ user\ account\ by\ method\ in\ Admin.\r\n
+comment3.params=user
+comment3.target=void\ addRequest(Person)
+comment3.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ A\ method\ for\ adding\ registration\ request\ to\ database\r\n
+comment4.params=pwd
+comment4.target=boolean\ checkPwdLength(java.lang.String)
+comment4.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Check\ and\ ensure\ password\ length\ is\ at\ least\ 6\ characters.\r\n
+comment5.params=phone
+comment5.target=boolean\ checkPhoneNo(java.lang.String)
+comment5.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Check\ and\ ensure\ phone\ number\ is\ all\ in\ digit\r\n
+comment6.params=owner
+comment6.target=boolean\ validOwner(java.lang.String)
+comment6.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Validate\ the\ existence\ of\ Owner's\ username\ in\ the\ system.\ Used\ when\ Agent\ want\ to\ register\ along\ with\r\n\ \ \ \ the\ hiring\ owner's\ username\r\n
+comment7.params=username
+comment7.target=boolean\ checkExistence(java.lang.String)
+comment7.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Check\ existence\ of\ username\ in\ current\ system.\ Checked\ for\ all\ account\ types\ and\ also\ the\ registration\ request.\r\n\ \ \ \ Because\ username\ must\ be\ unique\ to\ be\ created.\r\n
+numComments=8

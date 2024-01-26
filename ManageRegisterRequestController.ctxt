@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ManageRegisterRequestController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controller\ class\ which\ is\ used\ by\ Admin\ to\ manage\ registration\ request\ send\ from\ tenants,\ owners\ or\ agents.\r\n\ \ \ \ Admin\ will\ either\ approve\ or\ decline\ the\ registration.\ Listview\ is\ used\ to\ display\ the\ registration\ requests.\r\n
+comment1.params=url\ resources
+comment1.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment1.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Create\ the\ admin\ instance\ and\ read\ all\ registration\ request\ into\ ArrayList\ of\ Person.\r\n\ If\ there\ is\ existing\ registration\ request,\ make\ a\ custom\ list\ for\ listview\r\n
+comment2.params=
+comment2.target=void\ makeCustomList()
+comment2.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ This\ is\ a\ method\ to\ set\ all\ data\ to\ the\ listview\ and\ set\ cell\ factory\ of\ the\ listview\ ,\ prepare\ to\r\n\ populate\ the\ register\ request\ info.\ It\ calls\ a\ private\ class\ named\ CustomListCell\ that\ manage\ the\ cells.\r\n
+comment3.params=accountListView
+comment3.target=javafx.scene.control.ListCell\ call(javafx.scene.control.ListView)
+numComments=4

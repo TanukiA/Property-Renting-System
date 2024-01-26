@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <ScrollPane prefHeight="889.0" prefWidth="1090.0" vbarPolicy="ALWAYS" BorderPane.alignment="CENTER">
+         <content>
+            <AnchorPane prefHeight="887.0" prefWidth="1077.0" style="-fx-background-color: #E6F2F3;">
+               <children>
+                  <ScrollPane layoutX="118.0" layoutY="20.0" prefHeight="220.0" prefWidth="699.0" vbarPolicy="NEVER">
+                     <content>
+                        <VBox fx:id="imageVBox" prefHeight="224.0" prefWidth="702.0" />
+                     </content>
+                  </ScrollPane>
+                  <Pane layoutX="22.0" layoutY="257.0" prefHeight="279.0" prefWidth="669.0" style="-fx-background-color: white;">
+                     <children>
+                        <Label layoutX="28.0" layoutY="65.0" text="Project:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="propertyNameLabel" layoutX="28.0" layoutY="21.0">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="projectLabel" layoutX="88.0" layoutY="65.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ImageView fitHeight="23.0" fitWidth="22.0" layoutX="110.0" layoutY="135.0">
+                           <image>
+                              <Image url="@../icon/bathroomIcon.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fitHeight="35.0" fitWidth="24.0" layoutX="45.0" layoutY="128.0">
+                           <image>
+                              <Image url="@../icon/roomIcon.jpg" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="rentPrice" layoutX="404.0" layoutY="27.0" prefHeight="30.0" prefWidth="134.0">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="170.0" layoutY="137.0" text="Size:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="rentRate" layoutX="296.0" layoutY="137.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="27.0" layoutY="97.0" text="Type:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="30.0" layoutY="223.0" text="Contact info:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="31.0" layoutY="182.0" text="Address:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="sizeLabel" layoutX="206.0" layoutY="137.0" prefHeight="20.0" prefWidth="67.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="propertyTypeLabel" layoutX="75.0" layoutY="98.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="roomNum" layoutX="22.0" layoutY="137.0" prefHeight="20.0" prefWidth="22.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="bathNum" layoutX="88.0" layoutY="137.0" prefHeight="20.0" prefWidth="22.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="addressLabel" layoutX="88.0" layoutY="182.0" prefHeight="20.0" prefWidth="581.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="phoneAndEmail" layoutX="116.0" layoutY="223.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="contactName" layoutX="116.0" layoutY="243.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="711.0" layoutY="257.0" prefHeight="395.0" prefWidth="351.0" style="-fx-background-color: white;">
+                     <children>
+                        <GridPane layoutX="35.0" layoutY="41.0" prefHeight="336.0" prefWidth="344.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label />
+                              <Label fx:id="faci3" GridPane.rowIndex="1" />
+                              <Label fx:id="faci5" GridPane.rowIndex="2" />
+                              <Label fx:id="faci7" GridPane.rowIndex="3" />
+                              <Label fx:id="faci9" GridPane.rowIndex="4" />
+                              <Label fx:id="faci11" GridPane.rowIndex="5" />
+                              <Label fx:id="faci13" GridPane.rowIndex="6" />
+                              <Label fx:id="faci2" GridPane.columnIndex="1" />
+                              <Label fx:id="faci4" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label fx:id="faci6" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label fx:id="faci1" />
+                              <Label fx:id="faci8" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label fx:id="faci10" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <Label fx:id="faci12" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <Label fx:id="faci15" GridPane.rowIndex="7" />
+                              <Label fx:id="faci17" GridPane.rowIndex="8" />
+                              <Label fx:id="faci14" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                              <Label fx:id="faci16" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                              <Label fx:id="faci18" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                           </children>
+                        </GridPane>
+                        <Label layoutX="150.0" layoutY="14.0" text="Facilities" underline="true">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Label layoutX="30.0" layoutY="552.0" text="Comment">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <ScrollPane layoutX="22.0" layoutY="593.0" prefHeight="267.0" prefWidth="544.0">
+                     <content>
+                        <VBox fx:id="commentVBox" prefHeight="267.0" prefWidth="548.0" />
+                     </content>
+                  </ScrollPane>
+                  <Button fx:id="editButton" layoutX="841.0" layoutY="104.0" mnemonicParsing="false" onAction="#editBtnPressed" prefHeight="51.0" prefWidth="100.0" style="-fx-background-color: #5C368D;" text="Edit" textFill="WHITE">
+                     <effect>
+                        <DropShadow height="13.0" radius="6.0" width="13.0" />
+                     </effect>
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="backBtn" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#backBtnPressed" prefHeight="66.0" prefWidth="76.0" style="-fx-background-color: white;" />
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </center>
+</BorderPane>

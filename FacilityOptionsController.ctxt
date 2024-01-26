@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=FacilityOptionsController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controller\ class\ for\ popout\ facilities\ option\ to\ select\ during\ Add\ Property,\ Edit\ property\ and\ \r\n\ \ \ \ Search\ property.\ It\ shows\ and\ wait\ for\ user\ response,\ obtain\ facilities\ arraylist\ and\ return.\ \r\n
+comment1.params=url\ resources
+comment1.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment1.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Initialize\ arraylist\ to\ store\ selected\ facilities\r\n
+comment2.params=stage
+comment2.target=void\ setStage(javafx.stage.Stage)
+comment2.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Set\ the\ facility\ option\ stage\ to\ show\ the\ facility\ options.\r\n
+comment3.params=
+comment3.target=java.util.ArrayList\ getFacilities()
+comment3.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ This\ method\ is\ called\ after\ the\ controller\ class\ is\ being\ used.\ It\ is\ used\ to\ return\ facilities\ arraylist\r\n\ after\ user\ respond.\r\n
+comment4.params=event
+comment4.target=void\ buttonPressed(javafx.event.ActionEvent)
+comment4.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ When\ OK\ button\ is\ pressed,\ it\ will\ sum\ up\ all\ the\ checkbox\ selected\ and\ close\ the\ stage\r\n
+comment5.params=
+comment5.target=void\ sumCheckBox()
+comment5.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ This\ method\ will\ add\ all\ checkbox\ into\ single\ ArrayList.\ After\ that,\ it\ retrieved\ selected\ checkbox\r\n\ ans\ add\ them\ to\ another\ list\ that\ can\ pass\ data\ to\ previous\ stage.\r\n
+numComments=6

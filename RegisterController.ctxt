@@ -1,0 +1,25 @@
+#BlueJ class context
+comment0.target=RegisterController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controlller\ class\ used\ during\ account\ registration\ for\ Tenant,\ Owner\ and\ Agent.\r\n\ \ \ \ It\ manages\ how\ the\ registration\ form\ perform\ and\ being\ submitted.\r\n\r\n
+comment1.params=url\ resources
+comment1.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Initialize\ the\ comboBox\ to\ select\ account\ type,\ setItems\ to\ it.\r\n
+comment2.params=primaryStage
+comment2.target=void\ setStage(javafx.stage.Stage)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ setStage,\ which\ is\ primaryStage\ that\ is\ passed\ from\ previous\ scene\ \r\n
+comment3.params=event
+comment3.target=void\ accountTypeSelected(javafx.event.ActionEvent)
+comment3.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Action\ when\ comboBox\ is\ selected.\ If\ Owner\ is\ selected,\ the\ fileChooser\ is\ enabled\ and\ textfield\ of\ hiring\ owner\r\n\ \ \ \ is\ disabled.\ If\ Agent\ is\ selected,\ the\ fileChooser\ is\ disabled\ and\ textfield\ of\ hiring\ owner\ is\ enabled.\r\n\ \ \ \ If\ Tenant\ is\ selected,\ both\ filChooser\ and\ textfield\ of\ hiring\ owner\ is\ not\ applicable,\ so\ both\ disabled.\r\n
+comment4.params=event
+comment4.target=void\ chooseFile(javafx.event.ActionEvent)
+comment4.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Mehod\ for\ choosing\ file\ from\ directory,\ in\ PDF\ or\ DOC.\r\n\ \ \ \ It\ is\ the\ supporting\ document\ for\ Owner\ only,\ to\ be\ attached\ upon\ registration\r\n
+comment5.params=event
+comment5.target=void\ submitRequest(javafx.event.ActionEvent)
+comment5.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ When\ the\ submit\ button\ is\ pressed,\ it\ checks\ for\ empty\ field.\r\n\ \ \ \ It\ also\ checks\ for\ password\ length\ and\ phone\ number.\ For\ Agent,\ it\ will\ validate\ whether\ the\ hiring\ owner's\r\n\ \ \ \ username\ is\ in\ the\ record.\ Only\ when\ all\ condition\ are\ valid,\ addRegisterRequest()\ method\ is\ called.\r\n\ \ \ \ As\ for\ Owner,\ it\ will\ also\ save\ the\ attached\ file.\ Lastly,\ clear\ the\ form\ after\ submitted.\r\n
+comment6.params=event
+comment6.target=void\ loginButtonClicked(javafx.event.ActionEvent)
+comment6.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ In\ case\ user\ want\ to\ login\ instead\ of\ register,\ login\ button\ is\ clicked\ to\ go\ to\ the\ login\ page.\r\n
+comment7.params=labelID
+comment7.target=void\ showAlert(java.lang.String)
+comment7.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Popout\ the\ dialog\ to\ notify\ user\ after\ submit\ button\ is\ clicked,\ either\ success\ or\ failed.\r\n
+numComments=8

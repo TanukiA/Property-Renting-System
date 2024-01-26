@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=MenuController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controller\ class\ for\ menu,\ which\ is\ the\ first\ page\ or\ scene\ of\ the\ project.\r\n\ \ \ \ It\ contains\ register\ button,\ login\ button\ and\ continue\ as\ guest\ button.\r\n
+comment1.params=primaryStage
+comment1.target=void\ setStage(javafx.stage.Stage)
+comment1.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Set\ the\ stage,\ which\ is\ primaryStage.\r\n
+comment2.params=event
+comment2.target=void\ registerButtonClicked(javafx.event.ActionEvent)
+comment2.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ When\ register\ button\ is\ clicked,\ user\ will\ go\ to\ the\ page\ of\ registration\ form.\r\n
+comment3.params=event
+comment3.target=void\ loginButtonClicked(javafx.event.ActionEvent)
+comment3.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ When\ login\ button\ is\ clicked,\ user\ will\ go\ to\ the\ page\ of\ login\ form.\r\n
+comment4.params=event
+comment4.target=void\ guestButtonClicked(javafx.event.ActionEvent)
+comment4.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ When\ guest\ button\ is\ clicked,\ user\ will\ go\ to\ the\ page\ of\ properties\ for\ guest\ (without\ renting\ feature)\r\n
+numComments=5

@@ -1,0 +1,16 @@
+#BlueJ class context
+comment0.target=ManageAccountController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controller\ class\ that\ is\ used\ by\ Admin\ to\ manage\ user\ account\ (view\ and\ delete).\r\n\ \ \ \ Listview\ is\ used\ to\ display\ user\ account\ in\ alphabetical\ order\ and\ update\ the\ user\ account\ \r\n\ \ \ \ .\r\n
+comment1.params=
+comment1.target=java.util.ArrayList\ getCLCS()
+comment2.params=url\ resources
+comment2.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment2.text=\r\n\ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ Initialize\ the\ admin\ instance\ and\ read\ all\ accounts\ data\ into\ an\ ArrayList.\r\n\ Then,\ check\ whether\ there\ is\ user\ account,\ if\ yes,\ proceed\ to\ making\ custom\ list\ for\ listview.\r\n
+comment3.params=
+comment3.target=void\ makeCustomList()
+comment3.text=\r\n\ This\ is\ a\ method\ to\ set\ all\ data\ to\ the\ listview\ and\ set\ cell\ factory\ of\ the\ listview\ ,\ prepare\ to\r\n\ populate\ the\ user\ account\ info.\ It\ calls\ a\ private\ class\ named\ CustomListCell\ that\ manage\ the\ cells.\r\n
+comment4.params=accountListView
+comment4.target=javafx.scene.control.ListCell\ call(javafx.scene.control.ListView)
+comment5.params=i\ username
+comment5.target=void\ setUser(int,\ java.lang.String)
+numComments=6

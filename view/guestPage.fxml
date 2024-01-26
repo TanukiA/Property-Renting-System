@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="642.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="-2.0" prefHeight="101.0" prefWidth="1097.0" style="-fx-background-color: #5C368D;">
+         <children>
+            <Button layoutX="853.0" layoutY="33.0" mnemonicParsing="false" onAction="#loginButtonClicked" prefHeight="37.0" prefWidth="95.0" style="-fx-background-color: white;" text="Log in">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <Label layoutX="77.0" layoutY="36.0" text="Cyberjaya Online Rental Management System" textFill="WHITE">
+               <font>
+                  <Font name="Candara" size="24.0" />
+               </font>
+            </Label>
+            <Button layoutX="520.0" layoutY="36.0" mnemonicParsing="false" onAction="#logoutClicked" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: white;" text="Register" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="50.0" fitWidth="55.0" layoutX="22.0" layoutY="29.0">
+               <image>
+                  <Image url="@../Icon/property.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="profileBtn" layoutX="948.0" layoutY="23.0" mnemonicParsing="false" onAction="#handleProfileBtn" prefHeight="88.0" prefWidth="77.0" style="-fx-background-color: transparent;" />
+            <ImageView fx:id="profilePic" fitHeight="67.0" fitWidth="70.0" layoutX="963.0" layoutY="21.0" pickOnBounds="true" preserveRatio="true" />
+            <Button layoutX="636.0" layoutY="33.0" mnemonicParsing="false" onAction="#registerButtonClicked" prefHeight="37.0" prefWidth="175.0" style="-fx-background-color: white;" text="Register a new account">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="propertyPane" layoutX="-1.0" layoutY="101.0" prefHeight="544.0" prefWidth="1098.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="531.0" prefWidth="1090.0">
+               <children>
+                  <AnchorPane layoutX="-1.0" prefHeight="541.0" prefWidth="232.0" style="-fx-background-color: #5C368D;">
+                     <children>
+                        <ComboBox fx:id="propertyTypeCombo" layoutX="24.0" layoutY="51.0" prefHeight="26.0" prefWidth="159.0" promptText="Property Type" style="-fx-background-color: white;" />
+                        <ComboBox fx:id="projectTypeCombo" layoutX="24.0" layoutY="100.0" prefHeight="26.0" prefWidth="159.0" promptText="Project " style="-fx-background-color: white;" />
+                        <ComboBox fx:id="ownerCombo" layoutX="24.0" layoutY="150.0" prefHeight="26.0" prefWidth="159.0" promptText="Property Owner" style="-fx-background-color: white;" />
+                        <ComboBox fx:id="priceCombo" layoutX="23.0" layoutY="199.0" prefHeight="26.0" prefWidth="159.0" promptText="Sort by Rental Price" style="-fx-background-color: white;" />
+                        <Button layoutX="24.0" layoutY="300.0" mnemonicParsing="false" onAction="#filterFacilitiesPressed" prefHeight="26.0" prefWidth="121.0" text="Filter by Facilities" />
+                        <RadioButton fx:id="inactiveRadio" layoutX="43.0" layoutY="382.0" mnemonicParsing="false" text="Inactive property" textFill="WHITE">
+                           <toggleGroup>
+                              <ToggleGroup fx:id="statusGroup" />
+                           </toggleGroup>
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="allRadio" layoutX="43.0" layoutY="417.0" mnemonicParsing="false" selected="true" text="All" textFill="WHITE" toggleGroup="$statusGroup">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RadioButton>
+                        <RadioButton fx:id="activeRadio" layoutX="43.0" layoutY="347.0" mnemonicParsing="false" text="Active property" textFill="WHITE" toggleGroup="$statusGroup">
+                           <font>
+                              <Font size="13.0" />
+                           </font>
+                        </RadioButton>
+                        <Button layoutX="51.0" layoutY="459.0" mnemonicParsing="false" onAction="#searchButtonPressed" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: black;" text="Search" textFill="WHITE">
+                           <effect>
+                              <DropShadow height="13.0" radius="6.0" width="13.0" />
+                           </effect>
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Button>
+                        <ComboBox fx:id="minRateCombo" layoutX="24.0" layoutY="250.0" prefHeight="26.0" prefWidth="89.0" promptText="Min Rate" style="-fx-background-color: white;" />
+                        <ComboBox fx:id="maxRateCombo" layoutX="128.0" layoutY="250.0" prefHeight="26.0" prefWidth="89.0" promptText="Max Rate" style="-fx-background-color: white;" />
+                     </children>
+                  </AnchorPane>
+                  <ScrollPane layoutX="230.0" layoutY="65.0" prefHeight="477.0" prefWidth="861.0" vbarPolicy="ALWAYS">
+                     <content>
+                        <VBox fx:id="propertyVBox" prefHeight="475.0" prefWidth="855.0" />
+                     </content>
+                  </ScrollPane>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

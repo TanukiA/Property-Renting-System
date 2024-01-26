@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=Report
+comment0.text=\r\n\ \ \ \ This\ is\ a\ class\ aggregated\ by\ Admin\ to\ create\ Report\ for\ property\ displayed\ on\ the\ homepage.\ \r\n\ \ \ \ It\ is\ associated\ with\ the\ report\ creation\ date\ and\ time.\r\n
+comment1.params=searchResult\ properties
+comment1.target=Report(java.util.ArrayList,\ java.util.ArrayList)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Constructor\ that\ set\ searchResult\ of\ the\ properties\ and\ the\ properties\ without\ search.\r\n\ \ \ \ Either\ one\ will\ be\ used\ later.\r\n\ \ \ \ Fill\ the\ char\ Array\ with\ '-'\ which\ is\ for\ table\ display\r\n
+comment2.params=file
+comment2.target=void\ saveTable(java.io.File)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Method\ to\ save\ table\ of\ properties\ into\ a\ txt\ file.\ This\ method\ is\ called\ in\ HomePropertyController\r\n\ \ \ \ and\ used\ by\ Admin\ only.\ The\ report\ is\ being\ saved\ to\ the\ selected\ directory\ by\ filechooser.\r\n
+numComments=3

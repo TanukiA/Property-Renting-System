@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=PopOutDialogController
+comment0.text=\r\n\ \ \ \ This\ is\ the\ controller\ class\ for\ popout\ dialog\ for\ notifying\ user\ about\ registration\ request\ sent,\r\n\ \ \ \ registration\ successful,\ registration\ failed\ and\ rental\ requested.\r\n
+comment1.params=event
+comment1.target=void\ closeButton(javafx.event.ActionEvent)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ When\ button\ is\ closed,\ the\ popout\ dialog\ is\ closed\r\n
+comment2.params=url\ resources
+comment2.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Set\ visible\ for\ notifying\ labels\ when\ condition\ matched\ (according\ to\ labelID\ passed),\ then\ close\ stage\r\n
+comment3.params=stage
+comment3.target=void\ setStage(javafx.stage.Stage)
+comment3.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Set\ the\ popup\ stage\r\n
+comment4.params=labelID
+comment4.target=void\ setLabelID(java.lang.String)
+comment4.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Set\ labelID\ from\ AdminRegisterController,\ RegisterController\ and\ TenantController\ for\ desired\ label\r\n
+comment5.params=
+comment5.target=void\ closeStage()
+comment5.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Close\ the\ stage\r\n
+numComments=6

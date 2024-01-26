@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=AdminRegisterController
+comment0.text=\r\n\ \ \ \ This\ is\ a\ controller\ class\ for\ admin\ registration.\ It\ is\ seperated\ from\ other\ user's\ registration\ because\ the\ \r\n\ \ \ \ features\ is\ different\ from\ them.\ \ \r\n
+comment1.params=event
+comment1.target=void\ submit(javafx.event.ActionEvent)
+comment1.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ When\ submit\ button\ is\ pressed,\ this\ method\ will\ check\ for\ any\ empty\ field.\ If\ field\ is\ not\ empty,\ it\ checks\r\n\ \ \ \ the\ password\ length\ and\ ensure\ digit\ only\ for\ phone\ number.\ After\ that,\ check\ whether\ the\ username\ exists\ or\ not.\r\n\ \ \ \ If\ everything\ is\ valid,\ create\ new\ account.\ A\ stage\ is\ popout\ to\ notify\ success\ or\ fail.\r\n
+comment2.params=labelID
+comment2.target=void\ showAlert(java.lang.String)
+comment2.text=\ \r\n\ \ \ \ Author\:\ Adeline\ Fong\ Li\ Ling\r\n\r\n\ \ \ \ Popup\ stage\ to\ notify\ success\ or\ fail\ for\ registration.\ It\ has\ a\ close\ button.\r\n
+comment3.params=url\ resources
+comment3.target=void\ initialize(java.net.URL,\ java.util.ResourceBundle)
+numComments=4

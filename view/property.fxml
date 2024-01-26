@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="525.0" prefWidth="1090.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="-1.0" prefHeight="526.0" prefWidth="232.0" style="-fx-background-color: #5C368D;">
+         <children>
+            <ComboBox fx:id="propertyTypeCombo" layoutX="24.0" layoutY="51.0" prefHeight="26.0" prefWidth="159.0" promptText="Property Type" style="-fx-background-color: white;" />
+            <ComboBox fx:id="projectTypeCombo" layoutX="24.0" layoutY="100.0" prefHeight="26.0" prefWidth="159.0" promptText="Project " style="-fx-background-color: white;" />
+            <ComboBox fx:id="ownerCombo" layoutX="24.0" layoutY="150.0" prefHeight="26.0" prefWidth="159.0" promptText="Property Owner" style="-fx-background-color: white;" />
+            <ComboBox fx:id="priceCombo" layoutX="23.0" layoutY="199.0" prefHeight="26.0" prefWidth="159.0" promptText="Sort by Rental Price" style="-fx-background-color: white;" />
+            <Button layoutX="24.0" layoutY="300.0" mnemonicParsing="false" onAction="#filterFacilitiesPressed" prefHeight="26.0" prefWidth="121.0" text="Filter by Facilities" />
+            <RadioButton fx:id="inactiveRadio" layoutX="43.0" layoutY="382.0" mnemonicParsing="false" text="Inactive property" textFill="WHITE">
+               <toggleGroup>
+                  <ToggleGroup fx:id="statusGroup" />
+               </toggleGroup>
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </RadioButton>
+            <RadioButton fx:id="allRadio" layoutX="43.0" layoutY="417.0" mnemonicParsing="false" selected="true" text="All" textFill="WHITE" toggleGroup="$statusGroup">
+               <font>
+                  <Font size="13.0" />
+               </font></RadioButton>
+            <RadioButton fx:id="activeRadio" layoutX="43.0" layoutY="347.0" mnemonicParsing="false" text="Active property" textFill="WHITE" toggleGroup="$statusGroup">
+               <font>
+                  <Font size="13.0" />
+               </font></RadioButton>
+            <Button layoutX="51.0" layoutY="459.0" mnemonicParsing="false" onAction="#searchButtonPressed" prefHeight="38.0" prefWidth="122.0" style="-fx-background-color: black;" text="Search" textFill="WHITE">
+               <effect>
+                  <DropShadow height="13.0" radius="6.0" width="13.0" />
+               </effect>
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Button>
+            <ComboBox fx:id="minRateCombo" layoutX="24.0" layoutY="250.0" prefHeight="26.0" prefWidth="89.0" promptText="Min Rate" style="-fx-background-color: white;" />
+            <ComboBox fx:id="maxRateCombo" layoutX="128.0" layoutY="250.0" prefHeight="26.0" prefWidth="89.0" promptText="Max Rate" style="-fx-background-color: white;" />
+         </children>
+      </AnchorPane>
+      <Button fx:id="addPropertyBtn" layoutX="430.0" layoutY="14.0" mnemonicParsing="false" onAction="#addPropertyPressed" prefHeight="38.0" prefWidth="146.0" style="-fx-background-color: #4C7C80;" text="Add Property" textFill="WHITE">
+         <effect>
+            <DropShadow height="13.0" radius="6.0" width="13.0" />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveReportBtn" layoutX="720.0" layoutY="14.0" mnemonicParsing="false" onAction="#saveReportPressed" prefHeight="38.0" prefWidth="146.0" style="-fx-background-color: #4C7C80;" text="Save This Report" textFill="WHITE">
+         <effect>
+            <DropShadow height="13.0" radius="6.0" width="13.0" />
+         </effect>
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Button>
+      <ScrollPane layoutX="232.0" layoutY="65.0" prefHeight="463.0" prefWidth="858.0" vbarPolicy="ALWAYS">
+         <content>
+            <VBox fx:id="propertyVBox" prefHeight="475.0" prefWidth="781.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>
